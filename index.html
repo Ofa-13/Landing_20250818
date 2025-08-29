@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Фотограф "Новое Мгновенье" - Ловим моменты, создаем воспоминания</title>
+    <title>Фотограф "Новые Мгновенья" - Ловим моменты, создаем воспоминания</title>
     
     <style>
         /* --- Глобальные стили и переменные --- */
@@ -414,6 +414,19 @@
                 flex-direction: column;
             }
         }
+
+        /* --- Раздел "Свадебные фотосессии" --- */
+        .wedding-photoshoots-section .container {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .wedding-photoshoots-section .container {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
@@ -421,7 +434,7 @@
     <!-- Шапка с навигацией -->
     <header class="main-header">
         <div class="container">
-            <a href="#home" class="logo">Мгновенье</a>
+            <a href="#home" class="logo">Новые мгновенья</a>
             
             <input id="menu-toggle-checkbox" type="checkbox">
             <label for="menu-toggle-checkbox" class="menu-icon">
@@ -469,12 +482,6 @@
                 <h2>Примеры работ</h2>
                 <div class="portfolio-grid">
                     <div class="portfolio-item">
-                        <img src="images_photo/wedding.jpg" alt="Свадебная фотосессия">
-                        <div class="portfolio-overlay">
-                            <span class="portfolio-overlay-text">Свадебная фотосессия</span>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
                         <img src="images_photo/girl.jpg" alt="Женский портрет">
                         <div class="portfolio-overlay">
                              <span class="portfolio-overlay-text">Женский портрет</span>
@@ -504,6 +511,20 @@
                              <span class="portfolio-overlay-text">Детская фотосессия</span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел "Свадебные фотосессии" -->
+        <section id="wedding-photoshoots" class="wedding-photoshoots-section">
+            <div class="container">
+                <h2>Свадебные фотосессии</h2>
+                <div class="about-image">
+                    <img src="images_photo/wedding.jpg" alt="Свадебная фотосессия">
+                </div>
+                <div class="about-content">
+                    <p>Ваш свадебный день — это уникальная история любви, полная нежности, радости и незабываемых моментов. Мы поможем сохранить эти мгновения на долгие годы, создавая искренние и красивые фотографии, которые будут напоминать вам о самом счастливом дне.</p>
+                    <p>Мы предлагаем индивидуальный подход к каждой паре, учитывая ваши пожелания и стиль свадьбы. От подготовки невесты до торжественного банкета — каждый важный момент будет запечатлен с любовью и вниманием к деталям.</p>
                 </div>
             </div>
         </section>
